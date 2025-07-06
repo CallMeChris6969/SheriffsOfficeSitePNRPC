@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Sheriff's Office</title>
+  <style>
+    :root {
+      --main-green: #274e13;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://cdn.discordapp.com/attachments/1326711735779852320/1391051690454679673/MMKR-11.jpg?ex=686a7d57&is=68692bd7&hm=318566367587fcfe0a0aa4338d40899d5af062775a3c158ed26f89547e17fb27') center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #333;
+    }
+    .top-banner {
+      background-color: #fff;
+      text-align: center;
+      padding: 8px 0;
+    }
+    .top-banner img {
+      height: 90px;
+      width: auto;
+    }
+    header {
+      background-color: rgba(39, 78, 19, 0.95);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 1em;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #cfd8dc;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+    h1, h2 {
+      color: var(--main-green);
+      margin-bottom: 15px;
+    }
+    .container p, .container li {
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+    .leadership-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .leader-card {
+      background: #ffffff;
+      border: none;
+      border-radius: 12px;
+      text-align: center;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .leader-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid var(--main-green);
+    }
+    .leader-card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+      color: var(--main-green);
+    }
+    .leader-card p {
+      margin: 0;
+      font-size: 0.95em;
+    }
+    footer {
+      background-color: rgba(39, 78, 19, 0.95);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .container ul li {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  .container ul li:nth-child(1) { animation-delay: 0.2s; }
+  .container ul li:nth-child(2) { animation-delay: 0.4s; }
+  .container ul li:nth-child(3) { animation-delay: 0.6s; }
+  .container ul li:nth-child(4) { animation-delay: 0.8s; }
+  .container ul li:nth-child(5) { animation-delay: 1s; }
+</style>
+</head>
+<body>
+  <!-- Banner -->
+  <div class="top-banner">
+    <img src="https://cdn.discordapp.com/attachments/1326711735779852320/1391056488243527821/bcsobanner.png?ex=686a81cf&is=6869304f&hm=ad3a96595311c40fbe58728499c899c757144537da2de38e480521dc2592e815" alt="BCSO LSSO Banner">
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="apply.html">Apply Now</a></li>
+        <li><a href="login.html">Officer Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>About Us</h1>
+
+    <h2>Jurisdiction</h2>
+    <p>The Sheriff's Office serves the regions of <strong>Blaine County</strong> and <strong>Los Santos County</strong> with pride, professionalism, and dedication to the community.</p>
+
+    <h2>Our Vision</h2>
+    <p>We are committed to fostering public safety, trust, and transparency through modern law enforcement strategies and community-oriented policing.</p>
+
+    <h2>Department Values</h2>
+<ul>
+  <li><strong>Integrity:</strong> Act with honesty and strong moral principles.</li>
+  <li><strong>Professionalism:</strong> Demonstrate excellence in all aspects of your duties.</li>
+  <li><strong>Service:</strong> Provide support and protection to the community.</li>
+  <li><strong>Accountability:</strong> Take responsibility for your actions.</li>
+  <li><strong>Teamwork:</strong> Collaborate with colleagues and the community to achieve shared goals.</li>
+</ul>
+
+    <h2>Leadership Team</h2>
+    <div class="leadership-grid">
+      <div class="leader-card">
+        <img src="https://cdn.discordapp.com/attachments/1326711735779852320/1391047494724489277/Kerk_Feltcher.png?ex=686a796f&is=686927ef&hm=b637a0756035fd3c80c2410b52a87a7f594320d1286799d30942980b857a017d&" alt="Kerk Feltcher Photo">
+        <h3>Kerk Feltcher</h3>
+        <p>Sheriff</p>
+      </div>
+      <div class="leader-card">
+        <img src="https://media.discordapp.net/attachments/1327079429553393758/1390759483264995529/BLANK.png?ex=686a15f3&is=6868c473&hm=d42a6384639e6acd1aa858c82639059381f8e1edbdbd33b6c585af4e3a70ae0f&format=webp&quality=lossless" alt="Undersheriff Photo">
+        <h3>[Name]</h3>
+        <p>Undersheriff</p>
+      </div>
+      <div class="leader-card">
+        <img src="https://media.discordapp.net/attachments/1327079429553393758/1390759483264995529/BLANK.png?ex=686a15f3&is=6868c473&hm=d42a6384639e6acd1aa858c82639059381f8e1edbdbd33b6c585af4e3a70ae0f&format=webp&quality=lossless" alt="Commander Photo">
+        <h3>[Name]</h3>
+        <p>Commander</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Blaine County Los Santos Sheriffs Office (PNRPC)</p>
+    <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
